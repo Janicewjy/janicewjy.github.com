@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="zh" class="demo-2 no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>kangaroo的简历</title>
+    <!-- 动态标题 -->
+    <script>document.addEventListener('visibilitychange', function () { if (document.visibilityState == 'hidden') { normal_title = document.title; document.title = '敲出美好的生活'; } else { document.title = normal_title; } });</script>
+    <!-- 引入fullpage的文件 -->
+    <link rel="stylesheet" href="./css/jquery.fullPage.css">
+    <script src="./js/jquery-1.8.3.min.js"></script>
+    <script src="./js/jquery.fullPage.js"></script>
+    <!-- 引入字体图标 -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- 引入less -->
+    <link rel="stylesheet/less" type="text/css" href="./css/index.less" />
+    <script src="./js/less.js" type="text/javascript"></script>
+    <!-- 第一屏 -->
+    <link rel="stylesheet" href="./css/button.css">
+    <!-- 第二屏 -->
+    <link rel="stylesheet" href="./css/circle.css">
+    <!-- 第三屏 -->
+    <link rel="stylesheet" href="./css/experience.css">
+    <script src="./js/experience.js"></script>
+
+    <!-- 第四屏 -->
+    <link rel="stylesheet" type="text/css" href="./css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="./css/component.css" />
+
+    <!-- 第五屏 -->
+    <!-- 打字机效果 -->
+    <link rel="stylesheet" type="text/css" href="./css/typeit.css">
+</head>
+
+<body>
+    <ul id="menu">
+        <li data-menuanchor="page1">
+            <a href="#page1" class='fa fa-user-o'></a>
+        </li>
+        <li data-menuanchor="page2">
+            <a href="#page2" class='fa fa-code'></a>
+        </li>
+        <li data-menuanchor="page3">
+            <a href="#page3" class='fa fa-hourglass-o'></a>
+        </li>
+        <li data-menuanchor="page4">
+            <a href="#page4" class='fa fa-bookmark-o'></a>
+        </li>
+        <li data-menuanchor="page5">
+            <a href="#page5" class='fa fa-comment-o'></a>
+        </li>
+    </ul>
+    <div id="dowebok">
+        <!-- 第一屏:关于我 -->
+        <div class="section section1" data-anchor="page1">
+            <!-- <button id="change">中英文切换</button> -->
+            <!--  -->
+            <!-- <div class="grid__item theme-1">
+                <button class="action">
+                    <svg class="icon icon--rewind">
+                        <use xlink:href="#icon-rewind"></use>
+                    </svg>
+                </button>
+                <button class="particles-button">点我</button>
+            </div> -->
+            <!--  -->
+            <div class="inner">
+                <div class="up-box">
+                    <div class="up">
+                        <img src="./images/me.png" alt="头像更新中">
+                    </div>
+                    <!-- <div class="popUp"></div> -->
+                </div>
+                <div class="middle">
+                    <p>我叫
+                        <span style="color: orange">黄</span>
+                        <span style="color: yellow">传</span>
+                        <span style="color: yellowgreen">聪</span>
+                        , 我为自己带盐</p>
+                    <ul>
+                        <li>
+                            <i class="fa fa-birthday-cake"></i>
+                            <span>年龄/24岁</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-graduation-cap"></i>
+                            <span>学历/专科</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-map-marker"></i>
+                            <span>坐标/深圳</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-desktop"></i>
+                            <span>状态/求职</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <p>三年互联网经验, 两年全职前端开发经验</p>
+                    <p>熟悉 PC端 / 移动端 / 小程序 和 Vue.js 开发</p>
+                </div>
+            </div>
+        </div>
+        <!-- 第二屏:技术栈 -->
+        <div class="section section2" data-anchor="page2">
+            <em>技能栈</em>
+            <div class="inner">
+                <!-- 圆圈旋转 -->
+                <div class="holderCircle">
+
+                    <div class="dotCircle">
+                        <span class="itemDot active itemDot1" data-tab="1">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-HTML"></use>
+                                <span class="forActive"></span>
+                        </span>
+                        <span class="itemDot itemDot2" data-tab="2">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-xiaochengxu"></use>
+                            </svg>
+                            <span class="forActive"></span>
+                        </span>
+                        <span class="itemDot itemDot3" data-tab="3">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-fe-sass"></use>
+                            </svg>
+                            <span class="forActive"></span>
+                        </span>
+                        <span class="itemDot itemDot4" data-tab="4">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-webpack"></use>
+                            </svg>
+                            <span class="forActive"></span>
+                        </span>
+                        <span class="itemDot itemDot5" data-tab="5">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-CSS"></use>
+                            </svg>
+                            <span class="forActive"></span>
+                        </span>
+                        <span class="itemDot itemDot6" data-tab="6">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-JS"></use>
+                            </svg>
+                            <span class="forActive"></span>
+                        </span>
+                        <span class="itemDot itemDot7" data-tab="7">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-jquery"></use>
+                            </svg>
+                            <span class="forActive"></span>
+                        </span>
+                        <span class="itemDot itemDot8" data-tab="8">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-fe-less"></use>
+                            </svg>
+                            <span class="forActive"></span>
+                        </span>
+                        <span class="itemDot itemDot9" data-tab="9">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-PHP"></use>
+                            </svg>
+                            <span class="forActive"></span>
+                        </span>
+                        <span class="itemDot itemDot10" data-tab="10">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-vuejs"></use>
+                            </svg>
+                            <span class="forActive"></span>
+                        </span>
+                    </div>
+
+                    <div class="contentCircle">
+
+                        <div class="CirItem active CirItem1">
+                            HTML/H5 90%
+                        </div>
+                        <div class="CirItem CirItem2">
+                            微信小程序 80%
+                        </div>
+                        <div class="CirItem CirItem3">
+                            Sass 90%
+                        </div>
+                        <div class="CirItem CirItem4">
+                            webpack 80%
+                        </div>
+                        <div class="CirItem CirItem5">
+                            CSS/CSS3 90%
+                        </div>
+                        <div class="CirItem CirItem6">
+                            JavaScript 75%
+                        </div>
+                        <div class="CirItem CirItem7">
+                            jQuery 85%
+                        </div>
+                        <div class="CirItem CirItem8">
+                            Less 90%
+                        </div>
+                        <div class="CirItem CirItem9">
+                            PHP 60%
+                        </div>
+                        <div class="CirItem CirItem10">
+                            Vuejs 70%
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <p>熟练使用HTML/CSS/H5C3网页开发</p>
+                    <p>熟练使用JavaScript完成页面交互和功能实现</p>
+                    <p>熟练使用Ajax/json进行前后端数据交互</p>
+                    <p>熟悉MVC/MVVM模式,应用Vue.js前端框架</p>
+                    <p>熟悉SVN/Git版本控制工具及一些框架插件的使用</p>
+                    <p>了解PHP和nodejs基础知识</p>
+                    <div class="title" style="font-size: 14px">持续更新...</div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- 第三屏:经历 -->
+        <div class="section section3" data-anchor="page3">
+            <em>经历</em>
+            <div class="item_box box10">
+                <div class="item_box_wp">
+                    <div class="voice_2">
+                        <ul>
+                            <li class="li1" id="li1">
+                                <div class="fold" style="display:none;">
+                                    <span class="img"></span>
+                                </div>
+                                <div class="unfold" style="display:block">
+                                    <dl>
+                                        <dt>
+                                            <!-- <img src="images/img10.png" /> -->
+                                        </dt>
+                                        <dd>
+                                            <b>微酷科技公司
+                                            </b>
+                                        </dd>
+                                        <p>2017.4 - 至今</p>
+                                        <br>
+                                        <p>◎Vue</p>
+                                        <p>1. 使用Bootstrap 编写页面，通过优雅降级，处理各种浏览器兼容性问题;
+                                        </p>
+                                        <p>
+                                            2. 使用Vue +Vue.router 构建单页面应用;
+                                        </p>
+                                        <p>
+                                            3. 采用Vue-cli快速搭建环境;
+                                        </p>
+                                        <p>
+                                            4. 采用Vuex处理各组件间的通讯，Vue-resource处理请求;
+                                        </p>
+                                        <p>
+                                            5. 使用Less预处理语言, Mint-ui / Element组件库提高团队开发效率.
+                                        </p>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li class="li2">
+                                <div class="fold">
+                                    <!-- <span class="img"></span> -->
+                                    <span class="txt">微酷科技公司</span>
+                                </div>
+                                <div class="unfold">
+                                    <dl>
+                                        <dt>
+                                            <!-- <img src="images/img42.png" /> -->
+                                        </dt>
+                                        <dd>
+                                            <b>微酷科技公司
+                                            </b>
+                                        </dd>
+                                        <p>2017.4 - 至今</p>
+                                        <br>
+                                        <p>◎微信小程序</p>
+                                        <p>1. 页面布局,将设计图转化为静态页面;
+                                        </p>
+                                        <p>
+                                            2. 使用Less预处理语言,让代码结构更加清晰,易于维护;
+                                        </p>
+                                        <p>
+                                            3. 使用Swiper实现首页轮播效果;使用Font-Awesome字体图标库;
+                                        </p>
+                                        <p>
+                                            4. 与后台开发工程师协作，完成前端数据绑定，操作交互;
+                                        </p>
+                                        <p>
+                                            5. 商品加入购物车,完成生成订单调用微信支付流程.
+                                        </p>
+                                    </dl>
+                                </div>
+                            </li>
+                            <li class="li3">
+                                <div class="fold">
+                                    <!-- <span class="img"></span> -->
+                                    <span class="txt">天德教育集团</span>
+                                </div>
+                                <div class="unfold">
+                                    <dl>
+                                        <dt>
+                                            <!-- <img src="images/img50.png" /> -->
+                                        </dt>
+                                        <dd>
+                                            <b>天德教育集团
+                                            </b>
+                                        </dd>
+                                        <p>2016.7 - 2017.3</p>
+                                        <br>
+                                        <p>◎PC端页面</p>
+                                        <p>1. 首页JavaScript轮播图,页面使用FullPage.js,同时实现下拉动画效果;
+                                        </p>
+                                        <p>
+                                            2. 使用ajax调用后台提供的接口获取文章数据.使用artTemplate动态渲染页面内容;
+                                        </p>
+                                        <p>
+                                            3. 使用html5shiv.js兼容H5新标签;
+                                        </p>
+                                        <p>
+                                            4. 使用Sass扩展语言方便后期维护;
+                                        </p>
+                                        <p>
+                                            5. 后期不断迭代优化和维护代码.
+                                        </p>
+                                    </dl>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 第四屏:作品集 -->
+        <div class="section section4" data-anchor="page4">
+            <em>作品集</em>
+            <div class="container">
+                <section id="grid" class="grid clearfix">
+                    <!-- 项目1 -->
+                    <a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+                        <figure>
+                            <img src="./images/4-1.png" />
+                            <svg viewBox="0 0 180 320" preserveAspectRatio="none">
+                                <path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"
+                                />
+                            </svg>
+                            <figcaption>
+                                <h2>启思维教育</h2>
+                                <p>PC端页面</p>
+                                <button>观看</button>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <!-- 项目二 -->
+                    <a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+                        <figure>
+                            <img src="./images/4-2.png" />
+                            <svg viewBox="0 0 180 320" preserveAspectRatio="none">
+                                <path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"
+                                />
+                            </svg>
+                            <figcaption>
+                                <h2>伴里鲜生</h2>
+                                <p>微信小程序</p>
+                                <button>观看</button>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <!-- 项目三 -->
+                    <a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+                        <figure>
+                            <img src="./images/4-3.png" />
+                            <svg viewBox="0 0 180 320" preserveAspectRatio="none">
+                                <path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"
+                                />
+                            </svg>
+                            <figcaption>
+                                <h2>e洗·新净界</h2>
+                                <p>微信公众号</p>
+                                <button>观看</button>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </section>
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- 第五屏:联系我 -->
+        <div class="section section5" data-anchor="page5">
+            <em>联系我</em>
+            <span class="type-it"></span>
+            <div class="find-me">
+                <!-- csdn博客 -->
+                <a href="https://blog.csdn.net/qq_40259641" target="_blank">
+                    <div class="sticker example-1"></div>
+                </a>
+                <!-- 微博 -->
+                <a href="https://weibo.com/5428905387/" target="_blank">
+                    <div class="sticker example-2"></div>
+                </a>
+                <!-- github -->
+                <a href="https://github.com/kangaroo711" target="_blank">
+                    <div class="sticker example-3"></div>
+                </a>
+                <!-- 谷歌邮箱 -->
+                <a href="mailto:tr.hcco@gmail.com">
+                    <div class="sticker example-4"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<!-- 全屏 -->
+<script src="./js/index.js"></script>
+<!-- 第一屏js -->
+<script src="./js/circle.js"></script>
+<script src="./iconfont/iconfont.js"></script>
+<script src="./js/button-anime.min.js"></script>
+<script src="./js/button-particles.js"></script>
+<script src="./js/button-demo.js"></script>
+
+<!-- 第二屏js -->
+<script src="./js/language.js"></script>
+
+<!-- 第三屏js -->
+
+<!-- 第四屏js -->
+<script src="./js/snap.svg-min.js"></script>
+
+<!-- 第五屏js -->
+<script src="./js/typeit.js"></script>
+<script type="text/javascript" src="js/sticker.min.js"></script>
